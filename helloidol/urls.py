@@ -21,5 +21,6 @@ import playground.views
 
 urlpatterns = [
     path('playground/hello/', playground.views.say_hello, name='playground_hello'), # 함수의 이름만 전달합니다 (소괄호 x)
+    path('playground/hello_html/', playground.views.say_hello_html, name='playground_hello_html'),
     path('admin/', admin.site.urls),
 ]
