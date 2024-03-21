@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import playground.views
+
 urlpatterns = [
+    path('playground/hello/', playground.views.say_hello, name='playground_hello'), # 함수의 이름만 전달합니다 (소괄호 x)
     path('admin/', admin.site.urls),
 ]
