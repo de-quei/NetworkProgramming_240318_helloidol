@@ -41,3 +41,24 @@
       1. _playground/_ -> _hello/_ -> _say_hello()_
       2. _playground/_ -> _hello_html/_ -> _say_hello_html()_
       3. _playground/_ -> _bye_html/_ -> _say_bye_html()_
+---
+6. startapp mrsgreenapple
+   1. Terminal
+      1. python manage.py startapp mrsgreenapple
+   2. helloidol/settings.py
+      1. 'mrsgreenapple', in INSTALLED_APPS
+7. mrsgreenapple/
+   1. views
+      1. show_omori()
+      2. show_wakai()
+   2. templates/mrsgreenapple
+      1. omori.html
+         1. title : mrsgreenapple - omori
+         2. h1 : mrsgreenapple
+         3. h2 : omori
+         4. img : omori's profile picture
+            1. border-radius : 50%;
+      2. wakai.html
+   3. urls
+      1. mrsgreenapple/ -> omori/ -> show_omori()
+      2. mrsgreenapple/ -> wakai/ -> show_wakai()
