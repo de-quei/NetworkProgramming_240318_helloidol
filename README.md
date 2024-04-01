@@ -51,14 +51,17 @@
    1. views
       1. show_omori()
       2. show_wakai()
+      3. -> templates에 context 전달
+      4. 정보를 하나로 묶고, 거기에서 꺼내오자
    2. templates/mrsgreenapple
-      1. omori.html
+      1. ~~omori.html~~
          1. title : mrsgreenapple - omori
          2. h1 : mrsgreenapple
          3. h2 : omori
          4. img : omori's profile picture
             1. border-radius : 50%;
-      2. wakai.html
+      2. ~~wakai.html~~
+      3. member.html
    3. urls
       1. mrsgreenapple/ -> omori/ -> show_omori()
       2. mrsgreenapple/ -> wakai/ -> show_wakai()
