@@ -49,10 +49,11 @@
       1. 'mrsgreenapple', in INSTALLED_APPS
 7. mrsgreenapple/
    1. views
-      1. show_omori()
-      2. show_wakai()
+      1. ~~show_omori()~~
+      2. ~~show_wakai()~~
       3. -> templates에 context 전달
       4. 정보를 하나로 묶고, 거기에서 꺼내오자
+      5. show_member()
    2. templates/mrsgreenapple
       1. ~~omori.html~~
          1. title : mrsgreenapple - omori
@@ -63,5 +64,6 @@
       2. ~~wakai.html~~
       3. member.html
    3. urls
-      1. mrsgreenapple/ -> omori/ -> show_omori()
-      2. mrsgreenapple/ -> wakai/ -> show_wakai()
+      1. ~~mrsgreenapple/ -> omori/ -> show_omori()~~
+      2. ~~mrsgreenapple/ -> wakai/ -> show_wakai()~~
+      3. `mrsgreenapple/ -> <member>/ -> show_member(member)`
