@@ -55,6 +55,7 @@
       4. 정보를 하나로 묶고, 거기에서 꺼내오자
       5. show_member()
       6. image link -> image file(static)
+      7. show_member_list()
    2. templates/mrsgreenapple
       1. ~~omori.html~~
          1. title : mrsgreenapple - omori
@@ -66,9 +67,11 @@
       3. member.html
          1. group_name, name, img_src
          2. `{% load static %} <img src="{% static img_src %}">`
+      4. member_list.html
    3. urls
       1. ~~mrsgreenapple/ -> omori/ -> show_omori()~~
       2. ~~mrsgreenapple/ -> wakai/ -> show_wakai()~~
       3. `mrsgreenapple/ -> <member>/ -> show_member(member)`
+      4. mrsgreenapple/ -> member_list/ -> show_member_list/
    4. static/mrsgreenapple/images/
       5. me.jpg

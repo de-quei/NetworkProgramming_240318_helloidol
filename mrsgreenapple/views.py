@@ -32,3 +32,7 @@ def show_wakai_html(request):
 def show_member(request, member_):
     context = list(filter(lambda member: member_ in member['name'], group['members']))[0]
     return render(request, 'mrsgreenapple/member.html', context=context)
+
+def show_member_list(request):
+    context = group #{'members':[{member1}, {member2}, ]}
+    return render(request, 'mrsgreenapple/member_list.html', context=context)
