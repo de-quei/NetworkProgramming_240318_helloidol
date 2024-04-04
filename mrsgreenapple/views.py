@@ -7,12 +7,14 @@ group = {
         {
             'group_name': 'mrs.greenapple',
             'name': 'omori',
-            'img_src': 'https://i.pinimg.com/564x/7e/ed/07/7eed071c0b6809f13c6e2ff14038b520.jpg',
+            'img_src': 'mrsgreenapple/images/me.jpg'
+            # 'img_src': 'https://i.pinimg.com/564x/7e/ed/07/7eed071c0b6809f13c6e2ff14038b520.jpg',
         },
         {
             'group_name': 'mrs.greenapple',
             'name': 'wakai',
-            'img_src': 'https://i.pinimg.com/736x/43/2c/ec/432cec0441b89f90af0c9c9917173188.jpg',
+            'img_src': 'mrsgreenapple/images/me.jpg'
+            #'img_src': 'https://i.pinimg.com/736x/43/2c/ec/432cec0441b89f90af0c9c9917173188.jpg',
         },
     ]
 }
