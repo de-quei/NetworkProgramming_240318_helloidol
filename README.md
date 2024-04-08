@@ -47,6 +47,8 @@
       1. python manage.py startapp mrsgreenapple
    2. helloidol/settings.py
       1. 'mrsgreenapple', in INSTALLED_APPS
+
+
 7. mrsgreenapple/
    1. views
       1. ~~show_omori()~~
@@ -67,7 +69,19 @@
       3. member.html
          1. group_name, name, img_src
          2. `{% load static %} <img src="{% static img_src %}">`
+         3. ```
+            {% extends 'base.html' %} 
+            {% block title %}{% endblock %}
+            {% block content %}{% endblock %}
+            ```
       4. member_list.html
+         1. {% url '앱이름:path이름' %}
+         2. {% url '앱이름:path이름' 변수=값 %}
+         3. ```
+            {% extends 'base.html' %} 
+            {% block title %}{% endblock %}
+            {% block content %}{% endblock %}
+            ```
    3. urls
       1. ~~mrsgreenapple/ -> omori/ -> show_omori()~~
       2. ~~mrsgreenapple/ -> wakai/ -> show_wakai()~~
@@ -75,3 +89,16 @@
       4. mrsgreenapple/ -> member_list/ -> show_member_list/
    4. static/mrsgreenapple/images/
       5. me.jpg
+
+
+8. templates/
+   1. base.html
+      ```
+      {% block title %}{% endblock %}
+      {% block css %}{% endblock %}
+      {% block content %}{% endblock %}
+      ```
+      
+9. helloidol/
+   1. in TEMPLATES in settings.py
+      1. 'DIRS': [BASE_DIR / 'templates']
