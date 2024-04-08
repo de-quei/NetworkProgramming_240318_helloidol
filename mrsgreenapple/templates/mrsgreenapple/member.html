@@ -1,16 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ group_name }} - {{ name }}</title>
-</head>
-<body>
-    <h1>{{ group_name }}</h1>
-    <h2>{{ name }}</h2>
-    {% load static %}
-    <img src="{% static img_src %}" alt="" style="border-radius: 50%"/>
-</body>
-</html>
+{% extends 'base.html' %}
+
+    {% block title %}{{ group_name }} - {{ name }}{% endblock %}
+
+    {% block content %}
+        <a href="{% url "mrsgreenapple:member_list" %}">🔙 멤버리스트</a>
+        <h1>{{ group_name }}</h1>
+        <h2>{{ name }}</h2>
+        {% load static %}
+        <img src="{% static img_src %}" alt="" style="border-radius: 50%"/>
+    {% endblock %}
